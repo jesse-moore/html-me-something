@@ -1,6 +1,35 @@
-header,
+header {
+    margin: 200px auto;
+    padding: 0 60px;
+    max-width: 940px;
+    font-size: 1.25em;
+}
+
+header h2 {
+    font-weight: 200;
+    font-size: 3em;
+    margin: 10px 0 40px 0;
+}
+
+header a {
+    color: rgb(20, 200, 255);
+    text-decoration: none;
+}
+
 footer {
-    margin: 0 20px;
+    margin: 50px auto;
+    max-width: 940px;
+}
+
+footer .icon {
+    fill: rgb(184, 184, 184);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(209, 209, 209);
+    background-color: rgb(29, 31, 36);
 }
 
 .footer-links {
@@ -9,12 +38,12 @@ footer {
 }
 
 .footer-links div {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .footer-links div a {
-	position: relative;
-	color: unset;
+    position: relative;
+    color: unset;
 }
 
 #github:hover div {
@@ -30,44 +59,63 @@ footer {
 }
 
 .footer-link-text {
-	display: none;
-	left: -50%;
-	margin-top: 10px;
+    display: none;
+    left: -50%;
+    margin-top: 10px;
     position: absolute;
 }
 
-.content {
-    margin: 50px auto;
-    max-width: 980px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+.main-container {
+    background-color: rgb(184, 184, 184);
+    color: rgb(27, 27, 27);
 }
 
 .sections-container {
-    margin: 50px 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.section-header h3 {
+	font-size: 2em;
+	font-weight: 400;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-header hr {
+    width: 470px;
 }
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -20px;
+    margin: 0 -15px;
 }
 
 .project-container {
-    margin: 0px 20px;
-    margin-bottom: 80px;
+    background-color: rgb(197, 197, 197);
+    box-shadow: 1px 1px 2px rgb(122, 122, 122);
+    border-radius: 5px;
+    margin: 0px 15px 30px;
+    padding: 10px;
     width: 450px;
 }
 
+.project-container article {
+	height: 160px;
+}
+
 .project-container img {
+    border-radius: 5px;
     width: 450px;
 }
 
 .projects-container::after {
     content: '';
-    flex-grow: 1;
-    margin: 0 20px;
+    margin: 0px 15px 30px;
+    padding: 10px;
     width: 450px;
 }
 
@@ -77,7 +125,8 @@ footer {
 }
 
 .project-container article span {
-    font-weight: 100;
+	font-weight: 700;
+	color: rgb(78, 92, 105);
 }
 
 .project-links {
